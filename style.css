@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+	font-family: "Lato";
+}
+
+header {
+	text-align: center;
+}
+
+img#logo{
+	width: 50%;
+}
+
+button {
+	font-family: "Lato";
+	font-size: 24px;
+	padding: 6px;
+}
+
+container.searchStep { 
+	/*display: none; */
+	text-align: center;	
+}
+
+iframe#mapFrame {
+	border: none;
+	/*height: 300px;*/
+	overflow: hidden;
+}
+
+p#selectedStates {
+	display: none;
+}
+
+button#nextBtn {
+	right: 0;
+	position: absolute;
+	display: none;
+}
+
+button#backBtn {
+	left: 0;
+	position: absolute;
+	display: none;
+}
+
+.scoreInput{
+	height: 50px;
+	display: inline-flex;
+}
+
+#satEnglishBox, #satMathBox, #actEnglishBox, #actMathBox, #satEnglishScore, #satMathScore, #actEnglishScore, #actMathScore{
+	align-self: center;
+}
+
+#satEnglishSlider, #satMathSlider, #actEnglishSlider, #actMathSlider{
+	height: 50px;
+}
+
+table{
+	width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+tr:nth-child(even){
+	background-color: #E4FFBB;
+}
+
+tr:nth-child(odd){
+	background-color: #B5FFB4;
+}
+
+td,th {
+	padding: 1ch;
+}
+
+tr.header {
+    font-size: 1.25em;
+}
+
+/* MapBox CSS Below */
+#map{
+	position: absolute;
+	width: 80%;
+    height: 60%;
+}
+
+#mapArea {
+	margin: auto;
+	width: 80vw;
+    height: 60vh;
+}
+
+.marker {
+  background-image: url('college-icon.png');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+/* MapBox CSS Above */
