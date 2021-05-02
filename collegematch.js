@@ -73,9 +73,9 @@
   
   /* In orer to properly load the clickable map demo the display property must not be set to none until after the page has loaded. */
   function hideSteps(){
-  	/* We wait half a second to switch the container to display="none" */
+  	/* We wait half a second to switch the section to display="none" */
   	setTimeout(function(){
- 		let steps = qsa("container.searchStep");
+ 		let steps = qsa("section.searchStep");
   		for(let i=0; i< steps.length; i++){
   			steps[i].style.display = "none";
   		}
@@ -94,7 +94,7 @@
   /* When the next or back button is pressed we ensure that only the current step is displayed on screen. Furthermore, we grey-out the back button when on step 1 and we grey-out the next button on the last step */
   function showStep(){
   	console.log("Step Number: "+stepNum);
-  	let steps = qsa("container.searchStep");
+  	let steps = qsa("section.searchStep");
   	var Next = document.getElementById('nextBtn');
   	var Back = document.getElementById('backBtn');
   	for(let i=0; i< steps.length; i++){

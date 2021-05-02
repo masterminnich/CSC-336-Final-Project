@@ -18,14 +18,14 @@ button {
 	padding: 6px;
 }
 
-container.searchStep { 
+section.searchStep { 
 	/*display: none; */
 	text-align: center;	
 }
 
 iframe#mapFrame {
 	border: none;
-	/*height: 300px;*/
+	width: 100%;
 	overflow: hidden;
 }
 
